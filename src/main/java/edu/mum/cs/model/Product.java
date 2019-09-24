@@ -1,9 +1,7 @@
 package edu.mum.cs.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 
 @Entity
 public class Product {
@@ -11,15 +9,18 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
+
     private String name;
-    private String desc;
+
+
+    private String description;
 
     public Product() {
     }
 
     public Product(String name, String desc) {
         this.name = name;
-        this.desc = desc;
+        this.description = desc;
     }
 
     public long getId() {
@@ -38,12 +39,12 @@ public class Product {
         this.name = name;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescription(String desc) {
+        this.description = desc;
     }
 
     @Override
@@ -51,7 +52,7 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", desc='" + desc + '\'' +
+                ", desc='" + description + '\'' +
                 '}';
     }
 }

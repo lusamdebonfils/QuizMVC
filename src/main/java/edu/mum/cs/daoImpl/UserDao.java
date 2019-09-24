@@ -28,6 +28,7 @@ public class UserDao implements Dao<User> {
 
     @Override
     public Optional<User> get(long id) {
+
         return Optional.ofNullable(entityManager.find(User.class, id));
     }
 
