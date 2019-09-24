@@ -17,8 +17,8 @@ import org.hibernate.jpa.boot.internal.PersistenceUnitInfoDescriptor;
 public class JpaEntityManagerFactory {
 
     private final String DB_URL = "jdbc:mysql://localhost:3306/sosomedia_db?serverTimezone=UTC";
-    private final String DB_USER_NAME = "admin";
-    private final String DB_PASSWORD = "Qwezxc@123";
+    private final String DB_USER_NAME = "root";
+    private final String DB_PASSWORD = "";
     private final Class[] entityClasses;
 
     public JpaEntityManagerFactory(Class[] entityClasses) {

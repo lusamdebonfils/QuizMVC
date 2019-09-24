@@ -13,7 +13,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="product">
+    <form action="product" method="post">
         <fieldset>
             <legend>Product</legend>
             <label for="name">Name</label>
